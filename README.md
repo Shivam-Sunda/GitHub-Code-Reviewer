@@ -149,37 +149,6 @@ TOP ISSUES
 
 ---
 
-##  Project Structure
-
-```
-i-Agentic-GitHub-Code-Reviewer/
-│
-├── main.py                  ← CLI runner
-├── api.py                   ← FastAPI REST server
-├── app.py                   ← Streamlit web UI
-├── llm.py                   ← LM Studio LLM factory
-├── config.py                ← Settings (URL, model, limits)
-├── test_lm.py               ← LM Studio connection test
-├── requirements.txt         ← Dependencies
-├── .env                     ← GitHub token (not committed)
-│
-├── tools/
-│   └── github_tools.py      ← GitHub API integration
-│
-├── rag/
-│   └── code_store.py        ← ChromaDB vector index
-│
-├── graph/
-│   └── review_graph.py      ← LangGraph pipeline
-│
-└── agents/
-    ├── fetcher.py            ← Agent 1: Fetch + RAG
-    ├── reviewer.py           ← Agent 2: Code review
-    ├── suggester.py          ← Agent 3: Fix suggestions
-    └── summariser.py         ← Agent 4: Final report
-```
-
----
 
 ## Config Reference
 
@@ -199,16 +168,6 @@ Context | 8192 |
 Model won't connect | Start LM Studio |
 Timeout | Reduce file limits |
 Token error | Increase Tokens |
-
-
----
-
-## License
-MIT License
-
----
-
-## Credits
 
 - LangGraph
 - LM Studio
