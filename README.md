@@ -1,18 +1,5 @@
 # Agentic GitHub Code Reviewer
 
-> A fully local, privacy-safe multi-agent system that automatically reviews  
-> any GitHub repository and generates a detailed code review report 
-> powered by LangGraph + LM Studio.  
-> **No API keys. No data leaves your machine.**
-
-![Python](https://img.shields.io/badge/Python-3.11+-blue)
-![LangGraph](https://img.shields.io/badge/LangGraph-0.2+-green)
-![LM Studio](https://img.shields.io/badge/LM%20Studio-Local%20LLM-purple)
-![FastAPI](https://img.shields.io/badge/FastAPI-REST%20API-red)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web%20UI-orange)
-
----
-
 ##  What It Does
 
 Give it any GitHub repository URL → it automatically:
