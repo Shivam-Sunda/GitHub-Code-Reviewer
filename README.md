@@ -12,23 +12,6 @@ Give it any GitHub repository URL → it automatically:
 
 ---
 
-## Architecture
-
-```
-                        GitHub URL
-                            ↓
-┌──────────────────────────────────────────────────────┐
-│              LangGraph State Machine                 │
-│                                                      │
-│  [FETCHER] → [REVIEWER] → [SUGGESTER] → [SUMMARISER] │
-│      ↓            ↓            ↓             ↓       │
-│  GitHub API    RAG Query    Fix Suggest   .md Report │
-└──────────────────────────────────────────────────────┘
-                            ↓
-                 review_YYYYMMDD_HHMMSS.md
-```
-
----
 
 ### Agent Roles
 
@@ -69,8 +52,8 @@ Give it any GitHub repository URL → it automatically:
 
 ### 1️. Clone Repo
 ```bash
-git clone https://github.com/Ravevx/Agentic-GitHub-Code-Reviewer.git
-cd Agentic-GitHub-Code-Reviewer
+git clone https://github.com/Shivam-Sunda/GitHub-Code-Reviewer.git
+cd GitHub-Code-Reviewer
 ```
 ### 2️. Create Environment
 ```bash
